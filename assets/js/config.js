@@ -7,6 +7,10 @@ window.VICE_CITY_CONFIG = {
   tagline: "THE NIGHT SHIFT",
   slogan: "Vice City Never Sleeps",
   streamerName: "Br3nDy4R",
+  backgrounds: {
+    startingSoon: "assets/img/STARTING.jpg",   // es. "assets/img/starting-soon.jpg"
+    brb: "assets/img/BRB.jpg"             // es. "assets/img/brb.jpg"
+  },
   social: {
     twitch: "@tuo_twitch",
     youtube: "@tuo_youtube",

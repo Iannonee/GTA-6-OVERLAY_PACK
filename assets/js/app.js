@@ -16,6 +16,18 @@
 
   document.querySelectorAll("[data-streamer]").forEach(el => el.textContent = cfg.streamerName || "Br3nDy4R");
 
+  const cfgScript = document.querySelector('script[src$="config.js"]');
+  const siteRoot = cfgScript ? new URL("../../", cfgScript.src) : new URL("./", location.href);
+  const bgs = cfg.backgrounds || {};
+  document.querySelectorAll("[data-bg]").forEach(el => {
+    const path = bgs[el.dataset.bg];
+    if (!path) return;
+    el.style.background = `url("${new URL(path, siteRoot).href}") center/cover no-repeat`;
+    el.classList.add("has-img");
+    const scene = el.closest(".obs-scene");
+    if (scene) scene.classList.add("has-img");
+  });
+
   const social = cfg.social || {};
   document.querySelectorAll("[data-social]").forEach(el => {
     const key = el.dataset.social;
