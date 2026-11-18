@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#130b22">
+  <title>Vice City Live — Overlay Pack</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="hub-page">
+  <div class="hub-bg"></div>
+  <header class="hub-header">
+    <a class="brand" href="index.html"><span class="brand-mark">VI</span><span><b data-channel-name>VICE CITY LIVE</b><small data-tagline>LIVE OVERLAY SYSTEM</small></span></a>
+    <span class="eyebrow">STREAM PACKAGE / 001</span>
+  </header>
+  <main class="hub-main">
+    <section class="hero">
+      <p class="eyebrow">WELCOME TO LEONIDA</p>
+      <h1>La notte<br><em>non dorme mai.</em></h1>
+      <p class="hero-copy">Il tuo centro di controllo per le live a tema Vice City. Apri una scena, copiala come Browser Source in OBS e sei pronto a partire.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="pages/gameplay.html">Apri overlay gameplay <span>↗</span></a>
+        <a class="btn btn-ghost" href="#scenes">Esplora tutte le scene</a>
+      </div>
+      <div class="hero-meta"><span><i></i> 1920 × 1080</span><span>OBS / Browser Source</span><span>Responsive control hub</span></div>
+    </section>
+    <section class="scene-section" id="scenes">
+      <div class="section-heading"><div><p class="eyebrow">YOUR BROADCAST</p><h2>Seleziona una scena</h2></div><span class="section-count">04 SCENES</span></div>
+      <div class="scene-grid">
+        <a class="scene-card card-start" href="pages/starting-soon.html"><span class="scene-number">01 / PRE-SHOW</span><span class="scene-title">Starting <em>Soon</em></span><span class="scene-link">Apri scena ↗</span></a>
+        <a class="scene-card card-chat" href="pages/just-chatting.html"><span class="scene-number">02 / ON AIR</span><span class="scene-title">Just <em>Chatting</em></span><span class="scene-link">Apri scena ↗</span></a>
+        <a class="scene-card card-game" href="pages/gameplay.html"><span class="scene-number">03 / IN GAME</span><span class="scene-title">Game<em>play</em></span><span class="scene-link">Apri scena ↗</span></a>
+        <a class="scene-card card-brb" href="pages/brb.html"><span class="scene-number">04 / SHORT BREAK</span><span class="scene-title">Be Right <em>Back</em></span><span class="scene-link">Apri scena ↗</span></a>
+      </div>
+    </section>
+    <section class="utility-grid">
+      <a class="utility-card" href="pages/alerts.html"><span class="utility-icon">✦</span><span><b>Alert overlay</b><small>Follow · Sub · Donazione</small></span><span class="arrow">↗</span></a>
+      <div class="utility-card"><span class="utility-icon">⌘</span><span><b>Configurazione OBS</b><small>Browser Source · 1920 × 1080</small></span><a class="text-link" href="README.md">Guida ↗</a></div>
+    </section>
+    <footer class="hub-footer"><span>VICE CITY LIVE / FAN-MADE STREAM GRAPHICS</span><span>BUILT FOR THE NIGHT SHIFT</span></footer>
+  </main>
+<script src="assets/js/config.js"></script><script>
+const c=window.VICE_CITY_CONFIG||{}; document.querySelectorAll("[data-channel-name]").forEach(e=>e.textContent=c.channelName||"VICE CITY LIVE"); document.querySelectorAll("[data-tagline]").forEach(e=>e.textContent=c.tagline||"THE NIGHT SHIFT");
+</script></body>
+</html>
