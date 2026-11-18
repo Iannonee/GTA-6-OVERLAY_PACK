@@ -20,4 +20,9 @@ html.transparent,html.transparent body,html.transparent .obs-scene{background:tr
 .scene-bg.has-img:before{opacity:1;background:linear-gradient(180deg,#0b071633 0,#0b071666 45%,#0b0716cc 100%)}
 .obs-scene.has-img .sun,.obs-scene.has-img .cityline,.obs-scene.has-img .palm{display:none}
 
+/* Cornice webcam senza patina: solo bordo, il video sotto resta pulito */
+.webcam-frame.glass-panel{background:transparent!important;box-shadow:0 0 18px #ff3ca655!important}
+.webcam-inner{background:transparent!important;border:0!important;color:transparent!important}
+.cam-full{box-shadow:none!important}
+
 [hidden]{display:none!important}
